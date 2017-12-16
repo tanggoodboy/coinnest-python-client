@@ -2,6 +2,9 @@
 Coinnest API Python Client
 ==========================
 
+.. image:: https://travis-ci.org/Leop0ld/coinnest-python-client.svg?branch=master
+    :target: https://travis-ci.org/Leop0ld/coinnest-python-client
+
 Docs `LINK <https://www.coinnest.co.kr/doc/intro.html>`_
 
 설치
