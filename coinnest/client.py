@@ -19,3 +19,8 @@ class Coinnest(object):
         url = '{}{}?coin={}'.format(self.api_url, '/api/pub/ticker', coin)
         response = requests.get(url)
         return response
+
+    def get_trade_history(self, coin='btc', since=0):
+        url = '{}{}?coin={}&since={}'.format(self.api_url, '/api/pub/trades', coin, since)
+        response = requests.get(url)
+        return response
