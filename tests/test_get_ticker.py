@@ -6,7 +6,7 @@ from coinnest import Coinnest
 
 
 def test_get_ticker():
-    mocked_resposne = {
+    mocked_response = {
         "high": 12000,
         "low": 10000,
         "buy": 11500,
@@ -17,7 +17,7 @@ def test_get_ticker():
     }
     coinnest = Coinnest()
     coinnest.get_ticker = MagicMock(
-        return_value=mocked_resposne,
+        return_value=mocked_response,
     )
     response = coinnest.get_ticker(coin='qtum')
-    assert response == mocked_resposne
+    assert response == mocked_response

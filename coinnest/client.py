@@ -24,3 +24,9 @@ class Coinnest(object):
         url = '{}{}?coin={}&since={}'.format(self.api_url, '/api/pub/trades', coin, since)
         response = requests.get(url)
         return response
+
+    def get_depth(self, coin='btc'):
+        url = '{}{}?coin={}'.format(self.api_url, '/api/pub/depth', coin)
+        response = requests.get(url)
+        return response
+
